@@ -1,4 +1,4 @@
-version = File.read(File.expand_path("../../RAILS_VERSION", __FILE__)).strip
+version = '3.2.19'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency('rack',          '~> 1.4.5')
   s.add_dependency('rack-test',     '~> 0.6.1')
   s.add_dependency('journey',       '~> 1.0.4')
-  s.add_dependency('sprockets',     '~> 2.2.1')
+  s.add_dependency('sprockets',     '~> 2.2')
   s.add_dependency('erubis',        '~> 2.7.0')
 
   s.add_development_dependency('tzinfo', '~> 0.3.29')
