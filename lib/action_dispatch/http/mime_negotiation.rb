@@ -52,7 +52,7 @@ module ActionDispatch
       def formats
         @env["action_dispatch.request.formats"] ||=
           if parameters[:format]
-            Array(Mime[parameters[:format]])
+            Array.wrap(Mime[parameters[:format]])
           elsif use_accept_header && valid_accept_header
             accepts
           elsif xhr?
